@@ -1,2 +1,22 @@
 06/28/2023 The LeetCode Beginner's Guide
-    
+
+07/04/2023 Typical Git operations: 
+
+    1. Create a profile for making Git changes
+        git config --global user.email "andersen1997801@gmail.com"
+        git config --global user.name "Andersen Lin"
+
+    2. Make initial commitments to an existing Github repo
+
+        git clone [repo_url]
+        Copy file(s) to be added to the repo to the cloned local repo folder
+        cd [repo_folder]
+        git add [file_names_to_be_aded_to_Github_repo]
+        git commit -m "[commit_message]"
+        git push origin main
+
+    3. Sync local with Github repo after deletions on Github repo
+
+        git fetch
+        git prune
+        git merge origin/main
